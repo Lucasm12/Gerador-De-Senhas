@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: rgba(192, 167, 5, 0.829);
+}
+.passGenerator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.sizePass {
+    display: flex;
+    flex-direction: column;
+}
+.sizePass button {
+    background-color: #c3ce32;
+    border: 2px solid #eeee04;
+    outline: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    margin: 0.5rem;
+    width: 5rem;
+    height: 1.8rem;
+
+    font-size: 1rem;
+}
+.pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pass input {
+    display: flex;
+    text-align:center;
+    text-decoration: teal;
+    height: 3rem;
+    width: 28rem;
+
+    font-size: 1.8rem;
+    border: 1px solid red;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.btn-copy {
+    background-color: rgb(214, 226, 43);
+    border: 2px solid rgb(114, 114, 0);
+    border-radius: 4px;
+
+    cursor: pointer;
+    outline: none;
+
+    margin: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 0.8rem;
+
+}
+
+
+.buttons button {
+
+    background-color: #d6e22b;
+    border: 2px solid #727200;
+    border-radius: 4px;
+
+    cursor: pointer;
+    outline: none;
+
+    margin: 0.5rem;
+    width: 10.1rem;
+    height: 2.3rem;
+
+    font-size: 1.2rem;
+
+}
+.buttons button:first-child:hover {
+    background-color: transparent;
+}
+.buttons button:last-child {
+    background-color: transparent;
+}
+.buttons button:last-child:hover {
+    background-color: rgb(214, 226, 43);
+}
+
+
+@media (max-width: 500px) {
+    .pass {
+        flex-direction: column;
+    }
+    .pass input {
+        width: 19rem;
+        font-size: 1.4rem;
+    }
+    .btn-copy {
+        width: 11rem;
+        height: 30px;
+    }
+}
+
+@media (max-width: 370px) {
+    .sizePass {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sizePass h2 {
+        font-size: 1.3rem;
+    }
+    .sizes button {
+        margin: 0.4rem 0;
+    }
+    .pass input {
+        font-size: 1rem;
+        width: 14rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons button {
+        width: 11rem;
+        font-size: 1rem;
+        margin: 3px;
+    }
+}
